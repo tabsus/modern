@@ -259,3 +259,42 @@
 		}
 	}
 }
+
+// end product-slider
+
+// start  tutorials
+
+.tutorials__title {
+	margin-bottom: 40px;
+}
+.tutorials {
+	padding: 60px 0 120px;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		max-width: 370px;
+		width: 100%;
+		a {
+			display: block;
+		}
+		&-img {
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			height: 270px;
+		}
+		&-title {
+			padding: 27px 10px;
+			background-color: #f8f8f8;
+			min-height: 80px;
+			text-align: center;
+			font-size: 24px;
+			font-weight: bold;
+			color: $bg;
+		}
+	}
+}
+
+// end  tutorials
