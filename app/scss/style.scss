@@ -68,15 +68,14 @@
 	&-title {
 		font-size: 48px;
 		line-height: 48px;
-		font-family: "Roboto", sans-serif;
-		font-weight: bold;
+		@include f700;
 		margin-bottom: 28px;
 	}
 	&-text {
 		font-size: 20px;
 		line-height: 20px;
 		margin-bottom: 50px;
-		font-weight: 500;
+		@include f500;
 	}
 	&-form {
 		max-width: 670px;
@@ -90,7 +89,7 @@
 			height: 56px;
 			border: none;
 			font-size: 14px;
-			font-weight: 500;
+			@include f500;
 			padding-left: 25px;
 			padding-right: 60px;
 			&::placeholder {
@@ -158,8 +157,7 @@
 		padding: 10px 30px;
 		min-height: 90px;
 		align-items: center;
-		font-weight: 500;
-		font-family: "Roboto", sans-serif;
+		@include f500;
 		border-bottom: 1px solid #e7ecf2;
 	}
 	&-name {
@@ -168,13 +166,13 @@
 	}
 	&-title {
 		display: block;
-		font-weight: 500;
+		@include f500;
 		font-size: 18px;
 		color: $bg;
 	}
 	&-price {
 		font-size: 20px;
-		font-weight: 700;
+		@include f700;
 		color: $bg;
 	}
 	&-category {
@@ -189,7 +187,7 @@
 	}
 	&-author {
 		font-size: 14px;
-		font-weight: 500;
+		@include f500;
 		display: flex;
 		align-items: center;
 		max-width: 245px;
@@ -262,6 +260,71 @@
 
 // end product-slider
 
+// start  advantages
+
+.advantages {
+	background-color: $bg;
+	padding: 110px 0;
+	&__title {
+		color: white;
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		text-align: center;
+		&:hover {
+			.advantages__item-title {
+				color: #8bc34a;
+			}
+			.advantages__item-image {
+				background-color: #8bc34a;
+			}
+			.advantages__item-image {
+				svg {
+					fill: white;
+				}
+			}
+		}
+		+ .advantages__item {
+			margin-left: 30px;
+			padding: 0px 15px;
+		}
+		&-image {
+			width: 150px;
+			height: 150px;
+			margin: 0px auto;
+			margin-bottom: 30px;
+			background-color: #fff;
+			border-radius: 50%;
+			transition: all 0.3s;
+			display: flex;
+			justify-content: center;
+			svg {
+				width: 100px;
+				fill: $bggit;
+				transition: all 0.3s;
+			}
+		}
+		&-title {
+			color: white;
+			font-size: 24px;
+			@include f500;
+			margin-bottom: 30px;
+			transition: all 0.3s;
+		}
+		&-text {
+			color: white;
+		}
+	}
+}
+.iconsvg-1 svg {
+	margin-left: 5px;
+}
+
+// end  advantages
+
 // start  tutorials
 
 .tutorials__title {
@@ -291,7 +354,7 @@
 			min-height: 80px;
 			text-align: center;
 			font-size: 24px;
-			font-weight: bold;
+			@include f700;
 			color: $bg;
 		}
 	}
